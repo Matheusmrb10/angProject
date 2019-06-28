@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Beb´s</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <app-foto 
+        *ngFor="let f of fotos"
+        [url]="f.url" 
+        [titulo]="f.titulo" 
+        [descricao]="f.descricao">
+  
+      </app-foto>
+
+      </div>
+
+    </div>
+  </body>
+</html>
